@@ -1,0 +1,700 @@
+div,
+span,
+a,
+input,
+p,
+i,
+body,
+img,
+h1,
+h2,
+h3,
+b,
+ul,
+li {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #16181C;
+  overflow: hidden;
+  color: #fff;
+  font: 12px/100% '微软雅黑';
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+a {
+  text-decoration: none;
+  color: #fff;
+}
+input {
+  border: 0;
+  outline: 0;
+}
+i {
+  font-style: normal;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+h1,
+h2 {
+  font-weight: normal;
+}
+li {
+  list-style: none;
+}
+.clearfix::after {
+  content: '.';
+  display: block;
+  visibility: hidden;
+  height: 0;
+  clear: both;
+}
+.clearfix {
+  *zoom: 1;
+}
+body {
+  height: 2000px;
+}
+body .loginBar {
+  border-radius: 10px;
+  position: absolute;
+  width: 400px;
+  height: 150px;
+  border: 1px solid gray;
+  background-color: #16181C;
+  top: 50%;
+  margin-top: -100px;
+  left: 50%;
+  margin-left: -200px;
+}
+body .loginBar input {
+  text-indent: 1em;
+}
+body .loginBar div {
+  width: 390px;
+  height: 40px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+}
+body .loginBar .userName span {
+  width: 40px;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+body .loginBar .userName input {
+  flex: 1;
+  height: 30px;
+}
+body .loginBar .userpassword span {
+  width: 40px;
+  font-size: 16px;
+  height: 30px;
+  line-height: 30px;
+}
+body .loginBar .userpassword input {
+  flex: 1;
+  height: 30px;
+}
+body .loginBar .opt button {
+  width: 100px;
+  margin: 0 10px;
+}
+body .check {
+  text-indent: 2em;
+  display: none;
+  border-radius: 10px;
+  position: absolute;
+  width: 300px;
+  padding-left: 50px;
+  left: 50%;
+  margin-left: -150px;
+  height: 50px;
+  background-color: wheat;
+  top: 200px;
+  margin-top: -100px;
+  line-height: 50px;
+}
+body .check input {
+  height: 40px;
+}
+body .main {
+  display: none;
+  width: 100%;
+  height: 1000px;
+}
+body .main .topBar {
+  width: 100%;
+  height: 50px;
+  background-color: #B82525;
+}
+body .main .topBar .logo {
+  width: 200px;
+  height: 100%;
+  float: left;
+  text-align: center;
+  line-height: 50px;
+  margin-right: 20px;
+}
+body .main .topBar .logo h1 {
+  color: #fff;
+  height: 50px;
+  cursor: pointer;
+}
+body .main .topBar .search {
+  margin-left: 100px;
+  width: 500px;
+  height: 40px;
+  float: left;
+  padding: 5px 5px;
+}
+body .main .topBar .search input {
+  width: 450px;
+  height: 40px;
+  text-indent: 2em;
+}
+body .main .topBar .search i {
+  cursor: pointer;
+  float: right;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  color: grey;
+  font-size: 30px;
+}
+body .main .topBar .userInfo {
+  position: relative;
+  width: 300px;
+  height: 40px;
+  float: right;
+  padding: 5px 0;
+}
+body .main .topBar .userInfo .iconname .userIcon {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  float: left;
+  overflow: hidden;
+  cursor: pointer;
+  margin-right: 10px;
+}
+body .main .topBar .userInfo .iconname .userIcon img {
+  width: 100%;
+  height: 100%;
+}
+body .main .topBar .userInfo .iconname .userName,
+body .main .topBar .userInfo .iconname .level {
+  margin-right: 10px;
+  float: left;
+  height: 40px;
+  color: #fff;
+  text-align: left;
+  line-height: 40px;
+  font-size: 14px;
+}
+body .main .topBar .userInfo .iconname .dengji {
+  width: 100px;
+  line-height: 40px;
+  float: left;
+  font-size: 14px;
+  color: #fff;
+}
+body .main .topBar .userInfo .iconname .dengji .level {
+  float: right;
+  width: 50px;
+  margin-left: 10px;
+}
+body .main .topBar .userInfo .userDetail {
+  display: none;
+  z-index: 1;
+  border: 1px solid grey;
+  background-color: #16181C;
+  top: 50px;
+  left: -742px;
+  position: absolute;
+  width: 800px;
+  height: 535px;
+  overflow: hidden;
+}
+body .main .topBar .userInfo .userDetail .detailContent {
+  font-size: 14px;
+  height: 200px;
+  border-bottom: 1px solid grey;
+}
+body .main .topBar .userInfo .userDetail .detailContent .icon {
+  width: 200px;
+  height: 200px;
+  float: left;
+}
+body .main .topBar .userInfo .userDetail .detailContent .icon img {
+  width: 100%;
+  height: 100%;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userAccount {
+  width: 500px;
+  height: 50px;
+  line-height: 50px;
+  float: left;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userAccount span {
+  float: left;
+  margin: 0 10px;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userAccount .level {
+  float: left;
+  width: 30px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  border: 2px solid #a82424;
+  border-radius: 8px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userAccount .usName {
+  font-size: 20px;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userFollow {
+  float: left;
+  width: 500px;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userFollow div {
+  border-right: 1px solid gray;
+  text-align: center;
+  width: 150px;
+  height: 50px;
+  float: left;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userFollow div span {
+  line-height: 30px;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userFollow div i {
+  display: block;
+}
+body .main .topBar .userInfo .userDetail .detailContent .userFollow .fans {
+  border-right: 0;
+}
+body .main .topBar .userInfo .userDetail .detailContent .signature,
+body .main .topBar .userInfo .userDetail .detailContent .location {
+  margin: 10px;
+  float: left;
+  width: 500px;
+  margin-top: 20px;
+}
+body .main .topBar .userInfo .userDetail .songsList {
+  position: absolute;
+  width: 817px;
+  height: 350px;
+  top: 200px;
+  overflow: auto;
+  overflow-x: hidden;
+}
+body .main .topBar .userInfo .userDetail .songsList .title {
+  width: 100%;
+  height: 30px;
+  font-size: 14px;
+  line-height: 30px;
+  border-bottom: 1px solid grey;
+  text-align: center;
+}
+body .main .topBar .userInfo .userDetail .songsList ul {
+  position: absolute;
+  overflow: auto;
+  height: 400px;
+  width: 817px;
+  left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+body .main .topBar .userInfo .userDetail .songsList ul li {
+  padding: 0 10px;
+  width: 180px;
+  height: 200px;
+  position: relative;
+}
+body .main .topBar .userInfo .userDetail .songsList ul li .playCount {
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  left: 10px;
+  text-align: right;
+  width: 140px;
+  padding: 0 10px;
+  height: 30px;
+  margin: 0 auto;
+  line-height: 30px;
+}
+body .main .topBar .userInfo .userDetail .songsList ul li .imgIcon {
+  width: 160px;
+  height: 160px;
+}
+body .main .topBar .userInfo .userDetail .songsList ul li .imgIcon img {
+  width: 100%;
+  height: 100%;
+}
+body .main .topBar .userInfo .userDetail .songsList ul li .listName,
+body .main .topBar .userInfo .userDetail .songsList ul li .songsNum {
+  width: 100%;
+  height: 20px;
+  line-height: 20px;
+}
+body .main .content {
+  width: 100%;
+  position: relative;
+}
+body .main .content .leftList {
+  width: 324px;
+  height: 768px;
+  border-right: 1px solid grey;
+}
+body .main .content .leftList .myMusicList {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+body .main .content .leftList .myMusicList .title {
+  width: 100%;
+  height: 50px;
+  font-size: 14px;
+  text-align: center;
+  line-height: 50px;
+}
+body .main .content .leftList .myMusicList .userLists {
+  overflow: auto;
+  width: 341px;
+  position: absolute;
+  top: 50px;
+  left: 0;
+  height: 520px;
+}
+body .main .content .leftList .myMusicList .userLists .userSongslist {
+  width: 291px;
+  height: 30px;
+  line-height: 30px;
+  padding: 0 10px;
+  padding-right: 40px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+body .main .content .leftList .myMusicList .userLists .userSongslist i,
+body .main .content .leftList .myMusicList .userLists .userSongslist span {
+  margin-left: 20px;
+  cursor: pointer;
+}
+body .main .content .leftList .myMusicList .userLists .userSongslist i .iconfont,
+body .main .content .leftList .myMusicList .userLists .userSongslist span .iconfont {
+  margin-right: 10px;
+}
+body .main .content .rightList {
+  position: absolute;
+  left: 324px;
+  top: 0;
+  width: 1100px;
+  height: 520px;
+}
+body .main .content .rightList .playListDetail {
+  border-bottom: 1px solid grey;
+  height: 200px;
+  width: 100%;
+}
+body .main .content .rightList .playListDetail .playListIcon {
+  margin-right: 20px;
+  width: 200px;
+  float: left;
+  height: 200px;
+}
+body .main .content .rightList .playListDetail .playListIcon img {
+  width: 200px;
+  height: 100%;
+}
+body .main .content .rightList .playListDetail .playListMessage {
+  position: relative;
+  width: 600px;
+  float: left;
+  height: 100%;
+}
+body .main .content .rightList .playListDetail .playListMessage .searchThis {
+  position: absolute;
+  width: 300px;
+  height: 40px;
+  left: 500px;
+  line-height: 40px;
+  top: 100px;
+}
+body .main .content .rightList .playListDetail .playListMessage .searchThis .searchinthisSong {
+  float: left;
+  text-indent: 2em;
+  width: 240px;
+  height: 40px;
+  border-radius: 20px;
+}
+body .main .content .rightList .playListDetail .playListMessage .searchThis #searchinThis {
+  float: left;
+  width: 40px;
+  font-size: 30px;
+  cursor: pointer;
+}
+body .main .content .rightList .playListDetail .playListMessage .numberCount {
+  position: absolute;
+  width: 200px;
+  height: 100px;
+  left: 300px;
+}
+body .main .content .rightList .playListDetail .playListMessage .numberCount div {
+  margin: 10px;
+}
+body .main .content .rightList .playListDetail .playListMessage .numberCount span {
+  margin: 10px;
+}
+body .main .content .rightList .playListDetail .playListMessage > span {
+  float: left;
+  width: 100px;
+  text-align: center;
+  line-height: 20px;
+  height: 20px;
+  background-color: #a12323;
+}
+body .main .content .rightList .playListDetail .playListMessage .playlistName {
+  height: 20px;
+  font-size: 14px;
+  line-height: 20px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+body .main .content .rightList .playListDetail .playListMessage .userIcon {
+  margin: 10px 0;
+  height: 30px;
+  line-height: 30px;
+}
+body .main .content .rightList .playListDetail .playListMessage .userIcon div {
+  float: left;
+  width: 30px;
+  height: 30px;
+}
+body .main .content .rightList .playListDetail .playListMessage .userIcon div img {
+  width: 30px;
+  height: 30px;
+  border-radius: 15px;
+}
+body .main .content .rightList .playListDetail .playListMessage .userIcon .userName {
+  font-size: 14px;
+}
+body .main .content .rightList .playListDetail .playListMessage .userIcon .creatTime {
+  margin-left: 20px;
+}
+body .main .content .rightList .playsingerList {
+  width: 100%;
+  height: 330px;
+  overflow: hidden;
+}
+body .main .content .rightList .playsingerList .opreation {
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border-bottom: 1px solid grey;
+}
+body .main .content .rightList .playsingerList .opreation span {
+  float: left;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  border-right: 1px solid grey;
+}
+body .main .content .rightList .playsingerList .opreation .optt,
+body .main .content .rightList .playsingerList .opreation .timee {
+  width: 50px;
+}
+body .main .content .rightList .playsingerList .opreation .songg {
+  width: 400px;
+}
+body .main .content .rightList .playsingerList .opreation .singerr {
+  width: 200px;
+}
+body .main .content .rightList .playsingerList .opreation .columnn {
+  width: 250px;
+}
+body .main .content .rightList .playsingerList .lists {
+  width: 100%;
+  height: 330px;
+  overflow: auto;
+}
+body .main .content .rightList .playsingerList .lists .songslist {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+body .main .content .rightList .playsingerList .lists .songslist span {
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .main .content .rightList .playsingerList .lists .songslist .opt,
+body .main .content .rightList .playsingerList .lists .songslist .time {
+  width: 50px;
+}
+body .main .content .rightList .playsingerList .lists .songslist .song {
+  width: 400px;
+}
+body .main .content .rightList .playsingerList .lists .songslist .singer {
+  width: 200px;
+}
+body .main .content .rightList .playsingerList .lists .songslist .column {
+  width: 250px;
+}
+body .main .content .rightList .playsingerList .lists .songslist .ranking {
+  position: absolute;
+  left: 5px;
+}
+body .main .content .rightList .playsingerList .lists .songslist .time {
+  text-align: left;
+}
+body .main .content .searchResult {
+  position: absolute;
+  left: 324px;
+  top: 0;
+  width: 1100px;
+  height: 520px;
+}
+body .main .content .searchResult .lists {
+  width: 100%;
+  height: 330px;
+  overflow: auto;
+}
+body .main .content .searchResult .lists .searchsongslist {
+  height: 30px;
+  line-height: 30px;
+  position: relative;
+  cursor: pointer;
+}
+body .main .content .searchResult .lists .searchsongslist span {
+  display: inline-block;
+  text-align: center;
+  padding: 0 10px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+body .main .content .searchResult .lists .searchsongslist .opt,
+body .main .content .searchResult .lists .searchsongslist .time {
+  width: 50px;
+}
+body .main .content .searchResult .lists .searchsongslist .song {
+  width: 400px;
+}
+body .main .content .searchResult .lists .searchsongslist .singer {
+  width: 200px;
+}
+body .main .content .searchResult .lists .searchsongslist .column {
+  width: 250px;
+}
+body .main .content .searchResult .lists .searchsongslist .ranking {
+  position: absolute;
+  left: 5px;
+}
+body .main .content .searchResult .lists .searchsongslist .time {
+  text-align: left;
+}
+body .main .media {
+  background-color: #222225;
+  width: 1100px;
+  height: 50px;
+  position: absolute;
+  z-index: 50;
+  top: 580px;
+  left: 325px;
+}
+body .main .media .mediaControl {
+  float: left;
+  margin-left: 100px;
+  width: 300px;
+  height: 40px;
+  padding-top: 10px;
+}
+body .main .media .mediaControl span {
+  border: 1px solid grey;
+  border-radius: 25px;
+  float: left;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  font-size: 30px;
+  cursor: pointer;
+  text-align: center;
+  margin-right: 140px;
+}
+body .main .media .mediaControl .play,
+body .main .media .mediaControl .pause {
+  position: absolute;
+  top: 10px;
+  border: 0;
+  width: 40px;
+  height: 40px;
+  font-size: 40px;
+  left: 185px;
+}
+body .main .media .mediaControl .pause {
+  display: none;
+}
+body .main .media .mediaControl .nextSong {
+  margin-right: 0;
+}
+body .main .media .progressBar {
+  height: 50px;
+  line-height: 50px;
+}
+body .main .media .progressBar span {
+  float: left;
+}
+body .main .media .progressBar .progress {
+  width: 50px;
+}
+body .main .media .progressBar .Bar {
+  position: relative;
+  width: 400px;
+  height: 10px;
+  background-color: #454546;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+body .main .media .progressBar .Bar i {
+  border-radius: 6px;
+  background-color: #fff;
+  text-align: center;
+  font-size: 12px;
+  color: #16181C;
+  font-weight: 800;
+  line-height: 12px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 12px;
+  height: 12px;
+}
+body .main .media .progressBar .Bar .progressShow {
+  width: 0;
+  height: 10px;
+  border-radius: 5px 0 0 5px;
+  top: 0;
+  left: 0;
+  background-color: #B82525;
+}

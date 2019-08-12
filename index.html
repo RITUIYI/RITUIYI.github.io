@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/网易云.css">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./font_s/iconfont.css">
+    <script src="./jquery-1.12.4.js"></script>
+    <script src="./template-web.js"></script>
+    <title>网易云音乐</title>
+</head>
+
+<body>
+    <!-- 遮罩层 -->
+    <div class="mask"></div>
+
+    <!-- 登录框 -->
+    <div class="loginBar">
+        <div class="userName">
+            <span>账号:</span><input class="userPhone" value="13622982094" type="text" placeholder="请输入手机号码">
+        </div>
+        <div class="userpassword">
+            <span>密码:</span><input type="password" class="userPassword" value="2324710MLGJE" placeholder="请输入账号密码">
+        </div>
+        <div class="opt">
+            <button class="login">登录</button>
+            <button class="cancel">取消</button>
+        </div>
+    </div>
+
+    <div class="check">
+        <input type="text">
+        <button class="sumit">提交验证码</button>
+    </div>
+
+    <div class="main">
+
+        <div class="topBar">
+            <div class="logo">
+                <h1>网易云音乐</h1>
+            </div>
+            <div class="search">
+                <input type="text" placeholder="搜索音乐 歌词 电台 动态"> <i class="iconfont">&#xe63f;</i>
+            </div>
+            <div class="userInfo">
+                <div class="iconname">
+                    <div class="userIcon">
+                        <img src="./images/favicon.ico" alt="">
+                    </div>
+                    <span class="userName">__阿癸</span>
+                    <div class="dengji"><span>等级</span><span class="level">8</span></div>
+                </div>
+                <div class="userDetail">
+                    <div class="detailContent">
+                        <div class="icon">
+                            <img src="" alt="">
+                        </div>
+                        <div class="userAccount">
+                            <span class="usName">阿癸</span>
+                            <span class="level">
+                                <i>8</i>
+                            </span>
+                            <span class="gender">男</span>
+                        </div>
+                        <div class="userFollow">
+                            <div class="news">
+                                <span>1</span>
+                                <i>动态</i>
+                            </div>
+                            <div class="flowed">
+                                <span>1</span>
+                                <i>关注</i>
+                            </div>
+                            <div class="fans">
+                                <span>1</span>
+                                <i>粉丝</i>
+                            </div>
+                        </div>
+                        <div class="signature"><span>个人介绍</span><i>乐观自信爱</i></div>
+                        <div class="location"><span>所在地区</span><i class="province">广东省</i><i class="city">深圳市</i></div>
+                    </div>
+
+                    <div class="songsList">
+                        <div class="title">我的歌单</div>
+                        <ul class="userLists">
+                            <li class="userList">
+                                <div class="playCount">
+                                    165
+                                </div>
+                                <div class="imgIcon">
+                                    <img src="" alt="">
+                                </div>
+                                <div class="listName">阿癸的歌单</div>
+                                <div class="songsNum"><span class="num">10</span><i>首</i></div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="leftList">
+                <div class="myMusicList">
+                    <div class="title">我的歌单</div>
+                    <ul class="userLists">
+                        <li class="userSongslist">
+                            <i class="rank">01</i>
+                            <span class="playlistName"><i class="iconfont">&#xe66a;</i>阿癸喜欢的音乐</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightList">
+                <div class="playListDetail">
+                    <div class="playListIcon">
+                        <img src="" alt="">
+                    </div>
+                    <div class="playListMessage">
+                        <div class="searchThis">
+                            <input type="text" class="searchinthisSong" placeholder="在此歌单内搜索">
+                            <i id='searchinThis' class="iconfont">&#xe63f;</i>
+                        </div>
+                        <div class="numberCount">
+                            <div class="playCount">
+                                <span>1485</span>
+                                <i>播放数</i>
+                            </div>
+                            <div class="songsCount">
+                                <span>456485</span>
+                                <i>总歌曲数</i>
+                            </div>
+                        </div>
+                        <div class="playlistName">
+                            阿癸的喜欢
+                        </div>
+                        <div class="userIcon">
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <span class="userName">收藏</span>
+                            <span class="creatTime"><i>2016-05-12</i>&nbsp;创建</span>
+                        </div>
+                        <span class="playAll"><i class="iconfont">&#xe72b;</i><span>播放全部</span></span>
+                    </div>
+
+                </div>
+                <div class="playsingerList">
+                    <div class="opreation">
+                        <span class="optt">操作</span>
+                        <span class="songg">音乐标题</span>
+                        <span class="singerr">歌手</span>
+                        <span class="columnn">专辑</span>
+                        <span class="timee">时长</span>
+                    </div>
+                    <ul class="lists">
+                        <li class="songslist">
+                            <i class="ranking">01</i>
+                            <span class="opt"><i class="iconfont">&#xe66a;</i></span>
+                            <span class="song">一只小黄鸡机会hi阿hi对</span>
+                            <span class="singer">德玛西亚合唱团</span>
+                            <span class="column">翻过这座山 泥浆里看到带客户丢</span>
+                            <span class="time">03:26</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+           <!--  <div class="searchResult">
+                <ul class="lists">
+                    <li class="searchsongslist">
+                        <i class="ranking">01</i>
+                        <span class="opt"><i class="iconfont">&#xe66a;</i></span>
+                        <span class="song">一只小黄鸡机会hi阿hi对</span>
+                        <span class="singer">德玛西亚合唱团</span>
+                        <span class="column">翻过这座山 泥浆里看到带客户丢</span>
+                        <span class="time">03:26</span>
+                    </li>
+                </ul>
+            </div> -->
+        </div>
+        <audio class="player media" src=""></audio>
+        <div class="media">
+            <div class="iconfont mediaControl">
+                <span class="latsSong">&#xe671;</span>
+                <span class="play">&#xe646;</span>
+                <span class="pause">&#xe61c;</span>
+                <span class="nextSong">&#xe674;</span>
+            </div>
+            <div class="progressBar">
+
+                <span class="progress">00:00</span>
+                <span class="Bar"><i class="progressShow"></i><i class="iconfont currentArrow">&#xe686;</i></span>
+                <span class="TimerLong">03:12</span>
+            </div>
+        </div>
+    </div>
+</body>
+<script id="lists" type="text/html">
+    {{each}}
+    <li class="songslist">
+        <i class="ranking">{{(($value.current)+1) < 10 ? '0' + (($value.current)+1) : (($value.current)+1)}}</i>
+        <span class="opt"><i class="iconfont">&#xe66a;</i></span>
+        <span class="song">{{$value.name}}</span>
+        <span class="singer">{{$value.ar[0].name}}</span>
+        <span class="column">{{$value.al.name}}</span>
+        <span class="time">{{$value.timeLong}}</span>
+    </li>
+    {{/each}}
+</script>
+<script id="playListDetail" type="text/html">
+    <div class="playListIcon">
+        <img src="{{coverImgUrl}}" alt="">
+    </div>
+    <div class="playListMessage">
+        <div class="searchThis">
+            <input type="text" class="searchinthisSong" placeholder="在此歌单内搜索"><i id='searchinThis' class="iconfont">&#xe63f;</i>
+        </div>
+        <div class="numberCount">
+            <div class="playCount">
+                <span>{{playCount}}</span>
+                <i>播放数</i>
+            </div>
+            <div class="songsCount">
+                <span>{{trackCount}}</span>
+                <i>总歌曲数</i>
+            </div>
+        </div>
+        <div class="playlistName">
+            {{name}}
+        </div>
+        <div class="userIcon">
+            <div>
+                <img src="{{creator.avatarUrl}}" alt="">
+            </div>
+            <span class="userName">{{creator.nickname}}</span>
+            <span class="creatTime"><i>{{createTime}}</i>&nbsp;创建</span>
+        </div>
+        <span class="playAll"><i class="iconfont">&#xe72b;<i><span>播放全部</span></span>
+    </div>
+</script>
+<script id="detailContent" type="text/html">
+    <div class="icon">
+        <img src="{{profile.avatarUrl}}" alt="">
+    </div>
+    <div class="userAccount">
+        <span class="usName">{{profile.nickname}}</span>
+        <span class="level">
+            <i>{{profile.playlistBeSubscribedCount}}</i>
+        </span>
+        {{if profile.gender == 1}}
+        <span class="gender">男</span>
+        {{else}}
+        <span class="gender">女</span>
+        {{/if}}
+    </div>
+    <div class="userFollow">
+        <div class="news">
+            <span>{{profile.eventCount}}</span>
+            <i>动态</i>
+        </div>
+        <div class="flowed">
+            <span>{{profile.follows}}</span>
+            <i>关注</i>
+    </div>
+        <div class="fans">
+            <span>{{profile.followeds}}</span>
+            <i>粉丝</i>
+        </div>
+    </div>
+    <div class="signature"><span>个人介绍</span><i>{{profile.signature}}<i></div>
+    {{if profile.city == 440300 && profile.province == 440000}}
+    <div class="location"><span>所在地区</span><i class="province">广东省</i><i class="city">深圳市</i></div>
+    {{else}}
+    <div class="location"><span>所在地区</span><i class="province">广东省</i><i class="city">深圳市</i></div>
+    {{/if}}
+</script>
+<script id="songsList" type="text/html">
+    {{each}}
+    <li class="userList">
+        <div class="playCount">
+            {{$value.playCount}}
+        </div>
+        <div class="imgIcon">
+            <img src="{{$value.coverImgUrl}}" alt="">
+        </div>
+        <div class="listName">{{$value.name}}</div>
+        <div class="songsNum"><span class="num">{{$value.trackCount}}</span><i></i></div>
+    </li>
+    {{/each}}
+</script>
+<script id="userLists" type="text/html">
+    {{each}}
+    {{if $value.name == '__阿癸喜欢的音乐'}}
+    <li class="userSongslist">
+        <i class="rank">{{($value.current+1) < 10 ? '0' + ($value.current+1) : ($value.current+1)}}</i>
+        <span class="playlistName"><i class="iconfont">&#xe66a;</i>{{$value.name}}</span>
+    </li>
+    {{else}}
+    <li class="userSongslist">
+            <i class="rank">{{($value.current+1) < 10 ? '0' + ($value.current+1) : ($value.current+1)}}</i>
+            <span class="playlistName"><i class="iconfont">&#xe65a;</i>{{$value.name}}</span>
+        </li>
+    {{/if}}
+    {{/each}}
+</script>
+<script id="iconname" type="text/html">
+    <div class="userIcon">
+        <img src="{{profile.avatarUrl}}" alt="">
+    </div>
+    <span class="userName">{{profile.nickname}}</span>
+    <div class="dengji"><span>等级</span><span class="level">{{profile.playlistBeSubscribedCount}}</span></div>
+</script>
+
+<script>
+    $(function () {
+        var userInfoArr = null;
+        var playList = null;
+        var userID = null;
+        var playingList = null;
+        var progresstimerID = null;
+        var BartimerID = null;
+        var TimerLongtimerID = null;
+        var songsLong = null;
+        //登录操作
+        $('.login').on('click', function () {
+            var phone = $('.userPhone').val();
+            var password = $('.userPassword').val();
+            $.ajax({
+                url: 'http://localhost:3000/login/cellphone',
+                type: 'get',
+                data: {
+                    phone: phone,
+                    password: password
+                },
+                success: function (backData) {
+                    userInfoArr = backData;
+                    userID = backData.account.id;
+                    $('.loginBar').hide();
+                    $('.mask').hide();
+                    $('.main').show();
+
+                    var html = template('iconname', backData);
+                    $('.iconname').html(html);
+
+                    $.ajax({
+                        url: 'http://localhost:3000/user/playlist',
+                        type: 'get',
+                        data: {
+                            uid: userID
+                        },
+                        success: function (backData) {
+                            playList = backData.playlist;
+                            for (var i = 0; i < playList.length; i++) {
+                                var date = new Date(playList[i].createTime);
+                                playList[i].createTime = date.toLocaleDateString();
+                                playList[i].current = i;
+                            }
+                            var html = template('userLists', playList);
+                            $('.userLists').html(html);
+                        }
+                    })
+                }
+            })
+
+        })
+
+        //点击头像 弹出用户详细信息
+        $(document.body).on('click', '.userIcon', function () {
+            $('.userDetail').slideToggle();
+            var html = template('detailContent', userInfoArr);
+            $('.detailContent').html(html);
+
+            var html2 = template('songsList', playList);
+            $('.songsList .userLists').html(html2);
+        })
+
+        //点击歌单封面 加载歌单列表
+        $(document.body).on('click', '.userSongslist,.userList', function () {
+            console.log(playList[$(this).index()]);
+
+            var html = template('playListDetail', playList[$(this).index()]);
+            $('.playListDetail').html(html);
+            var playlistId = playList[$(this).index()].id;
+
+            $.ajax({
+                url: 'http://localhost:3000/playlist/detail',
+                type: 'get',
+                data: {
+                    id: playlistId
+                },
+                success: function (backData) {
+                    var playlistsongsList = backData.playlist.tracks;
+                    for (var i = 0; i < playlistsongsList.length; i++) {
+                        playlistsongsList[i].current = i;
+                        var s = (playlistsongsList[i].dt) / 1000;
+                        playlistsongsList[i].timeLong = (Math.floor(s / 60) < 10 ? '0' + Math.floor(s / 60) : Math.floor(s / 60)) + ':' + (Math.floor(s % 60) < 10 ? '0' + Math.floor(s % 60) : Math.floor(s % 60));
+                    }
+                    playingList = playlistsongsList;
+                    var html = template('lists', playlistsongsList);
+                    $('.lists').html(html);
+                }
+            })
+        })
+
+        //双击歌曲 播放歌曲
+        $(document.body).on('dblclick', '.songslist', function () {
+            clearInterval(progresstimerID);
+            var songsid = playingList[$(this).index()].id;
+            songsLong = playingList[$(this).index()].dt / 1000;
+            console.log(songsid);
+            $.ajax({
+                url: 'http://localhost:3000/song/url',
+                type: 'get',
+                data: {
+                    id: songsid
+                },
+                success: function (backData) {
+                    $('.player').attr('src', backData.data[0].url);
+
+                    $('.player')[0].play();
+                    if (!($('.player')[0].paused)) {
+                        $('.play').hide().siblings('.pause').show();
+                    }
+                    if (($('.player')[0].ended)) {
+                        $('.play').show().siblings('.pause').hide();
+                    }
+                    progresstimerID = setInterval(playMusic, 1000);
+
+                    var TimerLongmin = (Math.floor(songsLong / 60)) < 10 ? '0' + (Math.floor(songsLong / 60)) : (Math.floor(songsLong / 60));
+                    var TimerLongsec = (Math.floor(songsLong % 60)) < 10 ? '0' + (Math.floor(songsLong % 60)) : (Math.floor(songsLong % 60));
+                    $('.TimerLong').text(TimerLongmin + ':' + TimerLongsec);
+
+
+
+                }
+            })
+        })
+        $('.play').on('click', function () {
+            playMusic();
+            progresstimerID = setInterval(playMusic, 1000);
+            $('.player')[0].play();
+            $(this).hide().siblings('.pause').show();
+        }).siblings('.pause').on('click', function () {
+            $('.player')[0].pause();
+            clearInterval(progresstimerID);
+            $(this).hide().siblings('.play').show();
+        })
+
+        //歌单内根据关键词搜索歌曲
+        $(document.body).on('click', '#searchinThis', searchSong);
+        $(document.body).on('keyup', '.searchinthisSong', function (e) {
+            if (e.keyCode == 13) {
+                searchSong();
+            }
+        })
+        //播放音乐函数
+        function playMusic() {
+            console.log($('.player')[0].currentTime);
+            m = (Math.floor($('.player')[0].currentTime / 60)) < 10 ? '0' + (Math.floor($('.player')[0].currentTime / 60)) : (Math.floor($('.player')[0].currentTime / 60));
+            s = (Math.floor($('.player')[0].currentTime % 60)) < 10 ? '0' + (Math.floor($('.player')[0].currentTime % 60)) : (Math.floor($('.player')[0].currentTime % 60));
+            $('.progress').text(m + ':' + s);
+            $('.progressShow').css({
+                width: 400 * $('.player')[0].currentTime / songsLong + 'px'
+            });
+            $('.currentArrow').css({
+                left: 400 * $('.player')[0].currentTime / songsLong + 'px'
+            })
+        }
+
+        //歌单内搜索歌曲
+        function searchSong() {
+            var Song = $('.searchinthisSong').val();
+            var songlist = document.getElementsByClassName('songslist');
+            for (var i = songlist.length - 1; i >= 0; i--) {
+                var ele = songlist[i];
+
+                if (ele.children[2].innerText.indexOf(Song) == -1 && ele.children[3].innerText.indexOf(Song) == -1) {
+                    songlist[i].parentNode.removeChild(songlist[i]);
+                }
+            }
+            var songlist = document.getElementsByClassName('songslist');
+            for (var i = 0; i < songlist.length; i++) {
+                songlist[i].setAttribute('current', i);
+                songlist[i].children[0].innerHTML = (Number(songlist[i].getAttribute('current')) + 1) < 10 ? '0' + (Number(songlist[i].getAttribute('current')) + 1) : (Number(songlist[i].getAttribute('current')) + 1);
+            }
+        }
+    })
+</script>
+
+</html>

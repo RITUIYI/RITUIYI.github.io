@@ -1,0 +1,845 @@
+div,
+span,
+a,
+input,
+p,
+i,
+body,
+img,
+h1,
+h2,
+h3,
+b,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #16181C;
+    overflow: hidden;
+    color: #fff;
+    font: 12px/100% '微软雅黑';
+}
+
+.mask {
+    // display: none;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+input {
+
+    border: 0;
+    outline: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+img {
+    border: 0;
+    vertical-align: middle;
+}
+
+h1,
+h2 {
+    font-weight: normal;
+}
+
+li {
+    list-style: none;
+}
+
+.clearfix::after {
+    content: '.';
+    display: block;
+    visibility: hidden;
+    height: 0;
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+body {
+    height: 2000px;
+
+    .loginBar {
+        // display: none;
+        //
+        border-radius: 10px;
+        position: absolute;
+        width: 400px;
+        height: 150px;
+        border: 1px solid gray;
+        background-color: #16181C;
+        top: 50%;
+        margin-top: -100px;
+        left: 50%;
+        margin-left: -200px;
+
+        input {
+            text-indent: 1em;
+        }
+
+        div {
+            width: 390px;
+            height: 40px;
+            padding: 5px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .userName {
+            span {
+                width: 40px;
+                font-size: 16px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            input {
+                flex: 1;
+                height: 30px;
+            }
+        }
+
+        .userpassword {
+            span {
+                width: 40px;
+                font-size: 16px;
+                height: 30px;
+                line-height: 30px;
+            }
+
+            input {
+                flex: 1;
+                height: 30px;
+            }
+        }
+
+        .opt {
+            button {
+                width: 100px;
+                margin: 0 10px;
+            }
+        }
+    }
+
+    .check {
+        text-indent: 2em;
+        display: none;
+        border-radius: 10px;
+        position: absolute;
+        width: 300px;
+        padding-left: 50px;
+        left: 50%;
+        margin-left: -150px;
+        height: 50px;
+        background-color: wheat;
+        top: 200px;
+        margin-top: -100px;
+        line-height: 50px;
+
+        input {
+            height: 40px;
+        }
+    }
+
+    .main {
+        display: none;
+        width: 100%;
+        height: 1000px;
+
+        .topBar {
+            width: 100%;
+            height: 50px;
+            background-color: #B82525;
+
+            .logo {
+                width: 200px;
+                height: 100%;
+                float: left;
+                text-align: center;
+                line-height: 50px;
+                margin-right: 20px;
+
+                h1 {
+                    color: #fff;
+                    height: 50px;
+                    cursor: pointer;
+                }
+            }
+
+            .search {
+                margin-left: 100px;
+                width: 500px;
+                height: 40px;
+                float: left;
+                padding: 5px 5px;
+
+                input {
+                    width: 450px;
+                    height: 40px;
+                    text-indent: 2em;
+                }
+
+                i {
+                    cursor: pointer;
+                    float: right;
+                    width: 40px;
+                    height: 40px;
+                    text-align: center;
+                    line-height: 40px;
+                    color: grey;
+                    font-size: 30px;
+                }
+            }
+
+            .userInfo {
+                position: relative;
+                width: 300px;
+                height: 40px;
+                float: right;
+                padding: 5px 0;
+
+                .iconname {
+                    .userIcon {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 20px;
+                        float: left;
+                        overflow: hidden;
+                        cursor: pointer;
+                        margin-right: 10px;
+
+                        img {
+                            width: 100%;
+                            height: 100%;
+                        }
+                    }
+
+                    .userName,
+                    .level {
+                        margin-right: 10px;
+                        float: left;
+                        height: 40px;
+                        color: #fff;
+                        text-align: left;
+                        line-height: 40px;
+                        font-size: 14px;
+                    }
+
+                    .dengji {
+                        width: 100px;
+                        line-height: 40px;
+                        float: left;
+                        font-size: 14px;
+                        color: #fff;
+
+                        .level {
+                            float: right;
+                            width: 50px;
+                            margin-left: 10px;
+                        }
+                    }
+                }
+
+                .userDetail {
+                    display: none;
+                    z-index: 1;
+                    border: 1px solid grey;
+                    background-color: #16181C;
+                    top: 50px;
+                    left: -742px;
+                    position: absolute;
+                    width: 800px;
+                    height: 535px;
+                    overflow: hidden;
+
+                    .detailContent {
+                        font-size: 14px;
+                        height: 200px;
+                        border-bottom: 1px solid grey;
+
+                        .icon {
+                            width: 200px;
+                            height: 200px;
+                            float: left;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+
+                        .userAccount {
+                            width: 500px;
+                            height: 50px;
+                            line-height: 50px;
+                            float: left;
+
+                            span {
+                                float: left;
+                                margin: 0 10px;
+                            }
+
+                            .level {
+                                float: left;
+                                width: 30px;
+                                height: 20px;
+                                line-height: 20px;
+                                text-align: center;
+                                border: 2px solid rgb(168, 36, 36);
+                                border-radius: 8px;
+                                margin-top: 15px;
+                                margin-left: 10px;
+                            }
+
+                            .usName {
+                                font-size: 20px;
+                            }
+                        }
+
+                        .userFollow {
+                            float: left;
+                            width: 500px;
+
+                            div {
+                                border-right: 1px solid gray;
+                                text-align: center;
+                                width: 150px;
+                                height: 50px;
+                                float: left;
+
+                                span {
+                                    line-height: 30px;
+                                }
+
+                                i {
+                                    display: block;
+                                }
+                            }
+
+                            .fans {
+                                border-right: 0;
+                            }
+                        }
+
+                        .signature,
+                        .location {
+                            margin: 10px;
+                            float: left;
+                            width: 500px;
+                            margin-top: 20px;
+                        }
+                    }
+
+
+
+                    .songsList {
+                        position: absolute;
+                        width: 817px;
+                        height: 350px;
+                        top: 200px;
+                        overflow: auto;
+                        overflow-x: hidden;
+
+                        .title {
+                            width: 100%;
+                            height: 30px;
+                            font-size: 14px;
+                            line-height: 30px;
+                            border-bottom: 1px solid grey;
+                            text-align: center;
+                        }
+
+                        ul {
+                            position: absolute;
+                            overflow: auto;
+                            height: 400px;
+                            width: 817px;
+                            left: 0;
+                            display: flex;
+
+                            // justify-content: space-evenly;
+                            flex-wrap: wrap;
+
+                            li {
+                                padding: 0 10px;
+                                width: 180px;
+                                height: 200px;
+                                position: relative;
+
+                                .playCount {
+                                    background-color: rgba(0, 0, 0, .6);
+                                    position: absolute;
+                                    top: 0;
+                                    left: 10px;
+                                    text-align: right;
+                                    width: 140px;
+                                    padding: 0 10px;
+                                    height: 30px;
+                                    margin: 0 auto;
+                                    line-height: 30px;
+                                }
+
+                                .imgIcon {
+                                    width: 160px;
+                                    height: 160px;
+
+                                    img {
+                                        width: 100%;
+                                        height: 100%;
+                                    }
+                                }
+
+                                .listName,
+                                .songsNum {
+                                    width: 100%;
+                                    height: 20px;
+                                    line-height: 20px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+
+            }
+        }
+
+        .content {
+            width: 100%;
+            position: relative;
+
+            .leftList {
+                width: 324px;
+                height: 768px;
+                border-right: 1px solid grey;
+
+                .myMusicList {
+                    width: 100%;
+                    height: 100%;
+                    overflow: hidden;
+                    position: relative;
+
+                    .title {
+                        width: 100%;
+                        height: 50px;
+                        font-size: 14px;
+                        text-align: center;
+                        line-height: 50px;
+                    }
+
+                    .userLists {
+                        overflow: auto;
+                        width: 341px;
+                        position: absolute;
+                        top: 50px;
+                        left: 0;
+                        height: 520px;
+
+                        .userSongslist {
+                            width: 291px;
+                            height: 30px;
+                            line-height: 30px;
+                            padding: 0 10px;
+                            padding-right: 40px;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                            overflow: hidden;
+
+                            i,
+                            span {
+                                .iconfont {
+                                    margin-right: 10px;
+                                }
+
+                                margin-left: 20px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .rightList {
+                position: absolute;
+                left: 324px;
+                top: 0;
+                width: 1100px;
+                height: 520px;
+
+                .playListDetail {
+                    border-bottom: 1px solid grey;
+                    height: 200px;
+                    width: 100%;
+
+
+
+                    .playListIcon {
+                        margin-right: 20px;
+                        width: 200px;
+                        float: left;
+                        height: 200px;
+
+                        img {
+                            width: 200px;
+                            height: 100%;
+                        }
+                    }
+
+                    .playListMessage {
+                        position: relative;
+
+                        width: 600px;
+                        float: left;
+                        height: 100%;
+
+                        .searchThis {
+                            position: absolute;
+                            width: 300px;
+                            height: 40px;
+                            left: 500px;
+                            line-height: 40px;
+
+                            top: 100px;
+
+                            .searchinthisSong {
+                                float: left;
+                                text-indent: 2em;
+                                width: 240px;
+                                height: 40px;
+                                border-radius: 20px;
+                            }
+
+                            #searchinThis {
+                                float: left;
+                                width: 40px;
+                                width: 40px;
+                                font-size: 30px;
+                                cursor: pointer;
+                            }
+                        }
+
+                        .numberCount {
+                            position: absolute;
+                            width: 200px;
+                            height: 100px;
+                            left: 300px;
+
+                            div {
+                                margin: 10px;
+                            }
+
+                            span {
+                                margin: 10px;
+                            }
+                        }
+
+
+                        >span {
+                            float: left;
+                            width: 100px;
+                            text-align: center;
+                            line-height: 20px;
+                            height: 20px;
+                            background-color: rgb(161, 35, 35);
+                        }
+
+                        .playlistName {
+                            height: 20px;
+                            font-size: 14px;
+                            line-height: 20px;
+                            margin-left: 20px;
+                            margin-bottom: 20px;
+                        }
+
+                        .userIcon {
+                            margin: 10px 0;
+                            height: 30px;
+                            line-height: 30px;
+
+                            div {
+                                float: left;
+                                width: 30px;
+                                height: 30px;
+
+                                img {
+                                    width: 30px;
+                                    height: 30px;
+                                    border-radius: 15px;
+                                }
+                            }
+
+                            .userName {
+                                font-size: 14px;
+                            }
+
+                            .creatTime {
+                                margin-left: 20px;
+                            }
+                        }
+                    }
+                }
+
+                .playsingerList {
+                    width: 100%;
+                    height: 330px;
+                    overflow: hidden;
+
+                    .opreation {
+                        width: 100%;
+                        height: 30px;
+                        line-height: 30px;
+                        text-align: center;
+                        border-bottom: 1px solid grey;
+
+                        span {
+                            float: left;
+                            padding: 0 10px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            border-right: 1px solid grey;
+                        }
+
+                        .optt,
+                        .timee {
+                            width: 50px;
+                        }
+
+                        .songg {
+                            width: 400px;
+                        }
+
+                        .singerr {
+                            width: 200px;
+                        }
+
+                        .columnn {
+                            width: 250px;
+                        }
+                    }
+
+                    .lists {
+                        width: 100%;
+                        height: 330px;
+                        overflow: auto;
+
+                        .songslist {
+                            height: 30px;
+                            line-height: 30px;
+                            position: relative;
+                            cursor: pointer;
+
+                            span {
+                                // float: left;
+                                display: inline-block;
+                                text-align: center;
+                                padding: 0 10px;
+                                white-space: nowrap;
+                                overflow: hidden;
+                                text-overflow: ellipsis;
+                            }
+
+                            .opt,
+                            .time {
+                                width: 50px;
+                            }
+
+                            .song {
+                                width: 400px;
+                            }
+
+                            .singer {
+                                width: 200px;
+                            }
+
+                            .column {
+                                width: 250px;
+                            }
+
+                            .ranking {
+                                position: absolute;
+                                left: 5px;
+                            }
+
+                            .time {
+                                text-align: left;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .searchResult {
+                position: absolute;
+                left: 324px;
+                top: 0;
+                width: 1100px;
+                height: 520px;
+
+                .lists {
+                    width: 100%;
+                    height: 330px;
+                    overflow: auto;
+
+                    .searchsongslist {
+                        height: 30px;
+                        line-height: 30px;
+                        position: relative;
+                        cursor: pointer;
+
+                        span {
+                            // float: left;
+                            display: inline-block;
+                            text-align: center;
+                            padding: 0 10px;
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                        }
+
+                        .opt,
+                        .time {
+                            width: 50px;
+                        }
+
+                        .song {
+                            width: 400px;
+                        }
+
+                        .singer {
+                            width: 200px;
+                        }
+
+                        .column {
+                            width: 250px;
+                        }
+
+                        .ranking {
+                            position: absolute;
+                            left: 5px;
+                        }
+
+                        .time {
+                            text-align: left;
+                        }
+                    }
+                }
+            }
+        }
+
+        .media {
+            background-color: #222225;
+            width: 1100px;
+            height: 50px;
+            position: absolute;
+            z-index: 50;
+            top: 580px;
+            left: 325px;
+
+            .mediaControl {
+                float: left;
+                margin-left: 100px;
+                width: 300px;
+                height: 40px;
+                padding-top: 10px;
+
+                span {
+                    border: 1px solid grey;
+                    border-radius: 25px;
+                    float: left;
+                    line-height: 30px;
+                    width: 30px;
+                    height: 30px;
+                    font-size: 30px;
+                    cursor: pointer;
+                    text-align: center;
+                    margin-right: 140px;
+                }
+
+                .play,
+                .pause {
+                    position: absolute;
+                    top: 10px;
+                    border: 0;
+                    width: 40px;
+                    height: 40px;
+                    font-size: 40px;
+                    left: 185px;
+                }
+
+                .pause {
+                    display: none;
+                }
+
+                .nextSong {
+                    margin-right: 0;
+                }
+            }
+
+            .progressBar {
+                height: 50px;
+                line-height: 50px;
+
+                span {
+                    float: left;
+                }
+
+                .progress {
+                    width: 50px;
+                }
+
+                .Bar {
+                    position: relative;
+                    width: 400px;
+                    height: 10px;
+                    background-color: #454546;
+                    border-radius: 5px;
+                    margin-top: 20px;
+                    margin-right: 20px;
+
+                    i {
+                        border-radius: 6px;
+                        background-color: #fff;
+                        text-align: center;
+                        font-size: 12px;
+                        color: #16181C;
+                        font-weight: 800;
+                        line-height: 12px;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 12px;
+                        height: 12px;
+                    }
+
+                    .progressShow {
+                        width: 0;
+                        height: 10px;
+                        border-radius: 5px 0 0 5px;
+                        top: 0;
+                        left: 0;
+                        background-color: #B82525;
+                    }
+                }
+            }
+        }
+    }
+}
